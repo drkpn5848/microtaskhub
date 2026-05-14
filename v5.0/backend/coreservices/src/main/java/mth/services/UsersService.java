@@ -122,7 +122,7 @@ public class UsersService {
 		try
 		{
 			JWT.validateJWT(token);
-			Pageable pageable = PageRequest.of(page - 1, size);
+			Pageable pageable = PageRequest.of(page - 1, size, Sort.by("id").ascending());
 			Page<Users> users = UR.findAll(pageable);
 			
 	        response.put("code", 200);
