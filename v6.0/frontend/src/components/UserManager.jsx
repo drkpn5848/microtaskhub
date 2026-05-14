@@ -181,6 +181,7 @@ const UserManager = ({logout}) => {
                 <div className='overlay'>
                     <div className='popup'>
                         <span className='close' onClick={()=>setShowPopup(false)}>&times;</span>
+                        <h3>{userData?.id == "" ? "New User" : "Update User"}</h3>
                         <label>Full Name*</label>
                         <input type='text' ref={fname} className={errorData?.fullname ? 'error' : ''} autoComplete='off' name='fullname' value={userData?.fullname} onChange={(e)=>handleInput(e)} />
                         <label>Phone Number*</label>

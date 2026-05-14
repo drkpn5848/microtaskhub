@@ -110,6 +110,10 @@
     cursor: pointer;
     opacity: 0.6;
 }
+.umanager .overlay .popup h3{
+    margin: 5px 0;
+    color: var(--primary-blue);
+}
 .umanager .overlay .popup label{
     margin-top: 10px;
     margin-bottom: 3px;
